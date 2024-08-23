@@ -71,7 +71,7 @@ export function TaskDetails() {
                         onClick={() => setEditMode(!editMode)}
                         className="task-details-button disable-edit"
                     >
-                        Disable
+                        Discard
                     </button>
                 </section>
             )}

@@ -4,7 +4,7 @@
   padding: 20px;
   border-radius: 20px;
   box-shadow: 20px 20px 60px #c3c3c3, -20px -20px 60px #ffffff;
-  
+  position: relative;
   display: flex;
   flex-direction: column;
   .task-search-input {
@@ -32,7 +32,7 @@
     button {
       background: linear-gradient(145deg, #e6e6e9, #ffffff);
       color: #333;
-      padding: 10px 25px;
+      padding: 10px 15px;
       border: none;
       border-radius: 12px;
       font-size: 14px;
@@ -53,7 +53,6 @@
   }
 
   .task-list {
-    
     gap: 15px;
     padding: 0;
     margin: 0;
@@ -187,7 +186,9 @@
 
 @media (max-width: 768px) {
   .task-list-container {
-    height: calc(100vh - 20px);
+    min-height: calc(100vh - 20px);
+    height: auto;
+    padding-bottom: 20px;
     .task-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -200,9 +201,9 @@
   .task-list-container {
     height: calc(100% - 20px);
     .task-list {
+      margin-bottom: 10px;
       display: flex;
       flex-direction: column;
-      margin-bottom: 10px;
     }
   }
 

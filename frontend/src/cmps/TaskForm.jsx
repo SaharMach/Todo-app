@@ -52,6 +52,7 @@ export function TaskForm({ task, onSave }) {
                     value={formData.title}
                     onChange={handleChange}
                     required
+                    placeholder='Title'
                 />
             </label>
             <br />
@@ -60,6 +61,7 @@ export function TaskForm({ task, onSave }) {
                     name="desc"
                     value={formData.desc}
                     onChange={handleChange}
+                    placeholder='Description'
                 />
             </label>
             <br />

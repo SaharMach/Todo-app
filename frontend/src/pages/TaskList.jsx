@@ -107,7 +107,7 @@ export function TaskList() {
              <TaskStats tasks={tasks} />
             <input
                 type="text"
-                placeholder="Search tasks..."
+                placeholder="Search tasks by title/description..."
                 value={filterBy}
                 onChange={handleSearchChange}
                 className="task-search-input"
@@ -119,7 +119,7 @@ export function TaskList() {
                 <button onClick={() => setToggleCreate(!toggleCreate)} className="task-create-toggle">+</button>
 
                 <button onClick={() => handleSortChange('dueDate')}>
-                    Sort by Due Date {sortBy === 'dueDate' && (sortOrder === 'asc' ? '↑' : '↓')}
+                    Sort by Date {sortBy === 'dueDate' && (sortOrder === 'asc' ? '↑' : '↓')}
                 </button>
             </div>
             <ul className="task-list">
