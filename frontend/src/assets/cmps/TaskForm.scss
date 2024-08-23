@@ -1,0 +1,50 @@
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+
+    label {
+        font-size: 1.1em;
+        color: #333;
+    }
+
+    input,
+    textarea,
+    select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    input[type="date"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    select {
+        background-color: #f9f9f9;
+    }
+
+    .task-form-submit {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #218838;
+        }
+    }
+}
