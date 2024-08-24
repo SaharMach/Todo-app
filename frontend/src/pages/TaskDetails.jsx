@@ -31,6 +31,7 @@ export function TaskDetails() {
     }
 
     async function handleSave(updatedTask) {
+        
         try {
             await taskService.update(id, updatedTask)
             fetchTaskById()

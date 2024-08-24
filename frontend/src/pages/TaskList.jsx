@@ -23,7 +23,6 @@ export function TaskList() {
     async function fetchTasks() {
         try {
             const res = await taskService.query()
-            console.log(res);
             setTasks(res)
             filteredTasks(tasks, filterBy)
         } catch (err) {
